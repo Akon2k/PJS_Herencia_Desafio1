@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Desafio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mx-auto text-center">
+        <img
+          src="./assets/img/conejo-perro-gato.jpg"
+          alt="animales"
+          class="img-fluid"
+        />
+        <h2 class="my-3">Consulta Veterinaria</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <label class="">Nombre del Dueño</label>
+            <input type="text" id="nombreDuenno" class="form-control mb-3" />
+
+            <label class="">Número Telefónico</label>
+            <input type="text" id="telefono" class="form-control mb-3" />
+
+            <label class="">Lugar de Residencia</label>
+            <input type="text" id="direccion" class="form-control mb-3" />
+
+            <label class="">Nombre de la Mascota</label>
+            <input type="text" id="nombreMascota" class="form-control mb-3" />
+
+            <label class="">Tipo de Mascota</label>
+            <select name="" id="tipoMascota" class="form-control mb-3">
+              <option value="">Seleccione</option>
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+              <option value="conejo">Conejo</option>
+            </select>
+
+            <label class="">Motivo de la Consulta</label>
+            <textarea id="motivo" rows="5" class="form-control"></textarea>
+
+            <div class="row my-5">
+              <div class="col-12 text-center">
+                <button type="button" id="boton" class="btn btn-primary">
+                  Agregar
+                </button>
+              </div>
+            </div>
+
+            <div class="text-center my-5 border shadow">
+              Datos Agregados
+              <div id="mensaje"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
